@@ -24,8 +24,8 @@ proxy:
   - id: cello_sample
     display-name: Cello Test Application
     description: Application which demonstrates the basics of a Shiny app
-    container-cmd: ["R", "-e", "shinyproxy::run_01_hello()"]
-    container-image: openanalytics/shinyproxy-demo
+    container-cmd: ["R", "-e", "shiny::runApp('/root/euler')"]
+    container-image: jhernandezcello/sample_app 
     container-network: sp-example-net
 
 logging:
