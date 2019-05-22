@@ -22,7 +22,7 @@ proxy:
     container-image: openanalytics/shinyproxy-demo
     container-network: sp-example-net
   - id: cello_sample
-    display-name: Hello Application
+    display-name: Cello Test Application
     description: Application which demonstrates the basics of a Shiny app
     container-cmd: ["R", "-e", "shinyproxy::run_01_hello()"]
     container-image: openanalytics/shinyproxy-demo
