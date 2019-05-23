@@ -21,13 +21,13 @@ proxy:
     container-cmd: ["R", "-e", "shinyproxy::run_06_tabsets()"]
     container-image: openanalytics/shinyproxy-demo
     container-network: sp-example-net
-  - id: cello_sample
+  - id: euler
     display-name: Cello Test Application
     description: Application which demonstrates the basics of a Shiny app
     container-cmd: ["R", "-e", "shiny::runApp('/root/euler')"]
-    container-image: jhernandezcello/sample_app 
+    container-image: jhernandezcello/sample_app
     container-network: sp-example-net
-
+    
 logging:
   file:
     shinyproxy.log
